@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'PHFlutterBoost_Example' do
-  pod 'PHFlutterBoost', :path => '../'
+  pod 'PHFlutterBoost', :path => '../PHFlutterBoost'
 
   target 'PHFlutterBoost_Tests' do
     inherit! :search_paths

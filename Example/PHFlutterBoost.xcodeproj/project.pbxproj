@@ -64,9 +64,9 @@
 		8D0A31EBAE4EC4A62137CD60 /* Pods_PHFlutterBoost_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PHFlutterBoost_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBFC955D9B83AC55FB49C5D /* Pods-PHFlutterBoost_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHFlutterBoost_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PHFlutterBoost_Tests/Pods-PHFlutterBoost_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D38D73BB59EAB28DCE8FC722 /* Pods-PHFlutterBoost_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHFlutterBoost_Example.release.xcconfig"; path = "Target Support Files/Pods-PHFlutterBoost_Example/Pods-PHFlutterBoost_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DE9EC49FA7BB17F0DA796182 /* PHFlutterBoost.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PHFlutterBoost.podspec; path = ../PHFlutterBoost.podspec; sourceTree = "<group>"; };
-		F240CC2E754ABD2D123F5F9E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FAF33D9CB64F7A3C2EA3E0DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DE9EC49FA7BB17F0DA796182 /* PHFlutterBoost.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PHFlutterBoost.podspec; path = ../PHFlutterBoost.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F240CC2E754ABD2D123F5F9E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FAF33D9CB64F7A3C2EA3E0DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				9DBFC955D9B83AC55FB49C5D /* Pods-PHFlutterBoost_Tests.debug.xcconfig */,
 				320797D2807A729528DAE5A5 /* Pods-PHFlutterBoost_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				3DB2E74BD11223B784306871 /* [CP] Embed Pods Frameworks */,
+				3CC74E4123ABC69D1C37637F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,17 +295,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3DB2E74BD11223B784306871 /* [CP] Embed Pods Frameworks */ = {
+		3CC74E4123ABC69D1C37637F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PHFlutterBoost_Example/Pods-PHFlutterBoost_Example-frameworks.sh",
+				"${PODS_ROOT}/Flutter/Flutter.framework",
 				"${BUILT_PRODUCTS_DIR}/PHFlutterBoost/PHFlutterBoost.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PHFlutterBoost.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

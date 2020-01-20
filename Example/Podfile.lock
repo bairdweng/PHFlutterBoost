@@ -1,0 +1,23 @@
+PODS:
+  - Flutter (1.12.1303)
+  - PHFlutterBoost (0.0.2):
+    - Flutter
+
+DEPENDENCIES:
+  - PHFlutterBoost (from `../PHFlutterBoost`)
+
+SPEC REPOS:
+  trunk:
+    - Flutter
+
+EXTERNAL SOURCES:
+  PHFlutterBoost:
+    :path: "../PHFlutterBoost"
+
+SPEC CHECKSUMS:
+  Flutter: 36524acdf161828ac932746990799806ee983e95
+  PHFlutterBoost: 70f50f6e39705af2cba8dc1798a3b31d33846c39
+
+PODFILE CHECKSUM: ab267d8bd0a95f46ff6cc464339a958ed0b223b2
+
+COCOAPODS: 1.8.4
